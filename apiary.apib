@@ -47,9 +47,11 @@ be used for logging purposes.
 
 - **type:** The type of error returned, will be one of:
 
-> *invalid_request_error* : Invalid request errors arise when your request has invalid parameters or you are not allowed to make such a request (API Key restrictions).
-> *api_error*             : API errors cover any other type of problem (e.g. a temporary problem with StatsTracker's servers) and should only show up very infrequently.
-> *payment_error*         : Payment Errors are the most common type of error that you should expect to handle.
+>**invalid_request_error** : Invalid request errors arise when your request has invalid parameters or you are not allowed to make such a request (API Key restrictions).
+
+>**api_error**             : API errors cover any other type of problem (e.g. a temporary problem with PayMe's servers) and should only show up very infrequently.
+
+>**payment_error**         : Payment Errors are the most common type of error that you should expect to handle.
 
 - **message:** Developer facing message describing the error.
 - **log_message:** *(optional)* A user-friendly message that can be used to inform end user of the error.
