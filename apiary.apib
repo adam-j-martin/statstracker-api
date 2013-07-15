@@ -75,8 +75,8 @@ Allows you to send stats from your application to StatsTracker.
 --
 Send stat to StatsTracker
 POST /stats/send
-> Content-Type: application/json
+> Content-Type: application/json; charset=UTF-8
 { "key":"yourkey", "stat":"Example Stat", "type":"value", "value":"10.11" }
 < 201
-< Content-Type: application/json
+< Content-Type: application/json; charset=UTF-8
 { "status":"ok" }
