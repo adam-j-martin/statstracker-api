@@ -63,3 +63,20 @@ be used for logging purposes.
         { "type": "invalid_request_error", "message":"", "log_message": "", "parameters": "" }
     ] }
 ---
+
+--
+Stats
+Allows you to send stats from your application to StatsTracker.
+##Properties##
++ key
++ stat *(varchar)* - the name of the stat
++ type - *count* or *value*
++ value *(float)* - the value of the stat
+--
+Send stat to StatsTracker
+POST /stats/send
+> Content-Type: application/json
+{ "key":"yourkey", "stat":"Example Stat", "type":"value", "value":"10.11" }
+< 201
+< Content-Type: application/json
+{ "status":"ok" }
